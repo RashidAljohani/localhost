@@ -25,9 +25,9 @@ footer-links:
   email: rashid.atallah@gmail.com
   facebook:
   flickr:
-  github: RashidAljohani/localhost
+  github: rashidaljohani
   instagram:
-  linkedin: 
+  linkedin: rashidaljohani
   pinterest:
   rss: rss
   twitter: rashidaljohani
@@ -42,7 +42,7 @@ footer-links:
 disqus: 
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-43339302-11
+#google_analytics: UA-43339302-11
 
 # Your website URL (e.g. http://amitmerchant1990.github.io or http://www.amitmerchant.com)
 # Used for Sitemap.xml and your RSS feed
@@ -53,7 +53,7 @@ google_analytics: UA-43339302-11
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/localhost"
+baseurl: "/"
 
 #
 # !! You don't need to change any of the configuration flags below !!
