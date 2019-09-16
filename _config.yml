@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Reverie
+name: Rashid A Aljohani
 
 # Name of the author
 author: Amit Merchant
@@ -24,7 +24,7 @@ footer-links:
   email: amit.d.merchant@gmail.com
   facebook:
   flickr:
-  github: amitmerchant1990/reverie
+  github: RashidAljohani/localhost
   instagram:
   linkedin: 
   pinterest:
@@ -52,7 +52,7 @@ enforce_ssl: https://www.amitmerchant.com/reverie
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/reverie"
+baseurl: "/localhost"
 
 #
 # !! You don't need to change any of the configuration flags below !!
