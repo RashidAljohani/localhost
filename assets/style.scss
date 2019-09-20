@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-a:hover{
+a, a:hover{
   color: #00B199 !important;
 }
 
@@ -708,14 +708,11 @@ Modules - reusable parts of our design
   font-size: 14.5px;
   padding: 2px 13px;
   border: none;
-  background-color: #4CAF50;
+  background-color: #282A37;
   border-radius: 50px;
-  color: #fff;
+  color: #00B199;
 }
 
-.post-tags a:hover {
-  color: #fff;
-}
 
 .pagination a, .pagination span {
   padding: 7px 18px;
