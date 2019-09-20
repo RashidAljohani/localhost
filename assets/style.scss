@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-a, a:hover{
+a:hover{
   color: #00B199 !important;
 }
 
@@ -460,6 +460,10 @@ body:after {
   font-kerning: auto;
   font-feature-settings: "kern","liga","dlig","hlig","cswh";
   line-height: 1.2;
+}
+
+.entry a{
+  color: #00B199;
 }
 
 .page h1{
