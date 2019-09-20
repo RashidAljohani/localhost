@@ -2,9 +2,14 @@
 layout: post
 title:  Deploy App Connect on OpenShift
 categories: [ACE,OpenShift]
+image: /images/blogs/ace-openshift/banner.png
 ---
 
+![](/images/blogs/ace-openshift/banner.png)
+
+
 This post demonstrate the use of code snippets in the theme. The code snippets are powered by [Pygments](http://pygments.org/) and the code theme that is been used in Reverie is called [Draula](https://draculatheme.com/).
+
 
 This is a raw snippet:
 
