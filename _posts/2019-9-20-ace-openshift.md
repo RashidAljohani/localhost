@@ -2,7 +2,7 @@
 layout: post
 title:  Deploy App Connect on OpenShift
 categories: [ACE,OpenShift]
-image: /images/blogs/ace-openshift/banner.png
+excerpt: hello world wdwedwedlwkd;wkdlwjdlwjdlijweldij;wijd;iwedijwoiedjwjdoiwdj;woehd
 ---
 
 ![](/images/blogs/ace-openshift/banner.png)
