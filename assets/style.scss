@@ -308,8 +308,7 @@ p > img {
   margin: -5px 0 0 0;
   color: #999;
   font-size: 12px;
-  background: rgba(0, 181, 152,0.2);
-
+  
   @include mobile {
     margin: 3px 0;
   }
