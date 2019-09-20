@@ -271,6 +271,7 @@ p > img {
 
   img {
     border-radius: 5px;
+    background: url(/images/bitemoji-mobile.jpg) no-repeat
   }
 }
 
@@ -293,6 +294,10 @@ p > img {
   font-size: 28px;
   letter-spacing: 1px;
   text-align: left;
+
+  @include mobile {
+    text-align: center;
+  }
 }
 
 .site-description {
