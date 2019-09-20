@@ -6,10 +6,12 @@ layout: default
   <h1>{{ page.title }}</h1>
 
   <div>
-      {% if post && post.author-url %}
+      {% if post %}
+      {% if post.author-url %}
       <p class="author_title"><a href="{% post.author-url %}">{{post.author}}</a>  ·  {{ page.date | date: "%B %e, %Y" }}</p>
       {% else %}
       <p class="author_title">{{site.author}}  ·  {{ page.date | date: "%B %e, %Y" }}</p>
+      {% endif %}
       {% endif %}
     {% if page.last_modified_at %}
     <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
