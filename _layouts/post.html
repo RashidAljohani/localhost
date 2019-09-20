@@ -7,8 +7,8 @@ layout: default
 
   <div>
       {% if post %}
-      {% if post.author-url %}
-      <p class="author_title"><a href="{% post.author-url %}">{{post.author}}</a>  ·  {{ page.date | date: "%B %e, %Y" }}</p>
+      {% if post.authorUrl %}
+      <p class="author_title"><a href="{% post.authorUrl %}">{{post.author}}</a>  ·  {{ page.date | date: "%B %e, %Y" }}</p>
       {% else %}
       <p class="author_title">{{site.author}}  ·  {{ page.date | date: "%B %e, %Y" }}</p>
       {% endif %}
