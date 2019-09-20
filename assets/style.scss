@@ -292,6 +292,7 @@ p > img {
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  text-align: left;
 }
 
 .site-description {
@@ -308,7 +309,7 @@ p > img {
   margin: -5px 0 0 0;
   color: #999;
   font-size: 12px;
-  
+
   @include mobile {
     margin: 3px 0;
   }
