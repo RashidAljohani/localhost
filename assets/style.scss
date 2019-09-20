@@ -405,6 +405,7 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+    color: #00B199;
   }
 }
 
@@ -653,7 +654,7 @@ Modules - reusable parts of our design
 }
 
 #carbonads a:hover {
-  color: inherit;
+  color: #00B199;
 }
 
 #carbonads span {
@@ -709,6 +710,10 @@ Modules - reusable parts of our design
   border: none;
   background-color: #4CAF50;
   border-radius: 50px;
+  color: #fff;
+}
+
+.post-tags a:hover {
   color: #fff;
 }
 
