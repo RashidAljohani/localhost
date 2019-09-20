@@ -161,11 +161,11 @@ table tr td :last-child {
 }
 
 a {
-  color: $blue;
+  color: #00B199;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: #00B199;
   }
 }
 
@@ -712,9 +712,13 @@ Modules - reusable parts of our design
   font-size: 14.5px;
   padding: 2px 13px;
   border: none;
-  background-color: #282A37;
+  background-color: #4CAF50;
   border-radius: 50px;
-  color: #00B199;
+  color: #fff;
+}
+
+.post-tags a:hover{
+  color: #fff;
 }
 
 
