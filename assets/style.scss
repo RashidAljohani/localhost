@@ -261,7 +261,6 @@ p > img {
   float: left;
   width: 82px;
   height: 82px;
-  background: url(/images/bitemoji.jpg) no-repeat;
   margin-right: 15px;
 
   @include mobile {
@@ -272,7 +271,19 @@ p > img {
 
   img {
     border-radius: 5px;
-    background: url(/images/bitemoji-mobile.jpg) no-repeat;
+  }
+}
+
+#avatar-regular {
+  @include mobile {
+    display: none;
+  }
+}
+
+#avatar-mobile {
+  display: none;
+  @include mobile {
+    display: block;
   }
 }
 
