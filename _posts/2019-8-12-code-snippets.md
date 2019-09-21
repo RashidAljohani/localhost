@@ -2,8 +2,7 @@
 layout: post
 title:  Code snippets in a blog post
 categories: [HTML,Code]
-author: Fname Lname
-authorUrl: https://www.youtube.com/watch?v=cbWNgEM5oJ8
+author: ["Sample"]
 ---
 
 This post demonstrate the use of code snippets in the theme. The code snippets are powered by [Pygments](http://pygments.org/) and the code theme that is been used in Reverie is called [Draula](https://draculatheme.com/).
