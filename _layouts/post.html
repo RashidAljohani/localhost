@@ -7,7 +7,7 @@ layout: default
 
   <div>
 
-      <p class="author_title">{{ site.data.authors[0].display-name }} ·  {{ page.date | date: "%B %e, %Y" }}</p>
+      <p class="author_title">{{ site.data.authors['RashidAljohani'].display-name }} ·  {{ page.date | date: "%B %e, %Y" }}</p>
   
     {% if page.last_modified_at %}
     <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
@@ -31,11 +31,9 @@ layout: default
 
   <div class="share-blog">
     <p><span class="share-box">Share:</span> 
-      <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank"><img src="/images/twitter.png"></a>,
-      <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" target="_blank"><img src="/images/facebook.png"></a></p>,
+      <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank"><img src="/images/twitter.png"></a>
+      <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" target="_blank"><img src="/images/facebook.png"></a></p>
       <a href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{ page.title }}" target="_blank"><img src="/images/linkedin.png"></a></p>
-
-
   </div>
 
   <!--<div class="date">
