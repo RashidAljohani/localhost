@@ -26,37 +26,37 @@ Let's demonstrates that by deploying [App Connect](https://www.ibm.com/support/k
 
 1. download Helm client
 
-```Bash
+```
 source /dev/stdin <<< "$(curl -s https://storage.googleapis.com/kubernetes-helm/helm-v2.9.0-linux-amd64.tar.gz | tar xz)"
 ```
 
 2. create OpenShift project for Helm server (`tiller`)
 
-```Bash
+```
 oc new-project tiller
 ```
 
 3. set the tiller project/namespace .. that will enable Helm client to fetch the server-side
 
-```Bash
+```
 export TILLER_NAMESPACE=tiller
 ```
 
 4. initialize Helm client
 
-```Bash
+```
 cd linux-amd64
 ./helm init
 ```
 
 5. set the service-account for Helm server to give it the required access privileges
 
-```Bash
+```
 oc process -f https://github.com/openshift/origin/raw/master/examples/helm/tiller-template.yaml -p TILLER_NAMESPACE="${TILLER_NAMESPACE}" -p HELM_VERSION=v2.9.0 | oc create -f -
 ```
 
 6. verify Helm client and server deployment
-```Bash
+```
 ./helm version
 Client: &version.Version{SemVer:"v2.9.0", GitCommit:"f6025bb9ee7daf9fee0026541c90a6f557a3e0bc", GitTreeState:"clean"}
 Server: &version.Version{SemVer:"v2.9.0", GitCommit:"f6025bb9ee7daf9fee0026541c90a6f557a3e0bc", GitTreeState:"clean"}
@@ -71,12 +71,12 @@ oc new-project ace
 ```
 
 2. grant tiller to access the project
-```Bash
+```
 oc policy add-role-to-user edit "system:serviceaccount:${TILLER_NAMESPACE}:tiller"
 ```
 
 3. apply SCC to enable ace with the necessary access permissions
-```Bash
+```
 oc create -f https://raw.githubusercontent.com/IBM/cloud-pak/master/spec/security/scc/ibm-anyuid-scc.yaml
 ```
 
@@ -96,17 +96,17 @@ helm repo add stable https://raw.githubusercontent.com/IBM/charts/master/repo/st
 ```
 
 8. load App Connect image to local docker registry
-```Bash
+```
 docker load -i ibm-ace-server-11.0.0.5.tar.gz
 ```
 
 9. tag App Connect image with your registry host
-```Bash
+```
 docker tag ibm-ace-server:11.0.0.5 docker-registry.default.svc:5000/ace/ibm-ace-server:11.0.0.5
 ```
 
 10. push App Connect image to cluster registry
-```Bash
+```
 docker push docker-registry.default.svc:5000/ace/ibm-ace-server:11.0.0.5
 ```
 
@@ -114,14 +114,14 @@ docker push docker-registry.default.svc:5000/ace/ibm-ace-server:11.0.0.5
 ```
 helm install --name ace-dev stable/ibm-ace-server-dev --set license=accept --set image.repository.aceonly={docker-repo/ace-image-name} --set image.tag={image-tag}
 ```
-> ` you can update the chart values such as the image path & tag via the cli `
+* ` you may update the chart values: image path & tag via the cli`
 
 12. verify the deploymnet
-```Bash
+```
 oc get pod
 ```
 
-> the result should similar to this
+the result should similar to this
 
 ```
 NAME                            READY     STATUS    RESTARTS   AGE
