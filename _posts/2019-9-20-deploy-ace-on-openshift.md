@@ -7,6 +7,10 @@ image: /images/blogs/ace-openshift/banner.png
 author: ["RashidAljohani"]
 ---
 
+<div style="text-align: center;">
+ <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7D6KJY&placement=wwwamitmerchantcom" id="_carbonads_js"></script>
+</div>
+
 ![](/images/blogs/ace-openshift/banner.png)
 
 
