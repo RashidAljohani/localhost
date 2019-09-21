@@ -22,7 +22,7 @@ Let's demonstrates that by deploying [App Connect](https://www.ibm.com/support/k
 * Deploy App Connect via IBM charts
 
 
-# Install Helm
+## Install Helm
 
 1. download Helm client
 ```
@@ -57,7 +57,7 @@ Server: &version.Version{SemVer:"v2.9.0", GitCommit:"f6025bb9ee7daf9fee0026541c9
 ```
 
 
-# Deploy App Connect
+## Deploy App Connect
 
 1.  create a project/namespace
 ```
