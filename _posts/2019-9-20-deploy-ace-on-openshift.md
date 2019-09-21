@@ -22,35 +22,29 @@ Let's demonstrates that by deploying [App Connect](https://www.ibm.com/support/k
 * Deploy App Connect via IBM charts
 
 
-## Install Helm
+### Install Helm
 
 1. download Helm client
-
 ```
 source /dev/stdin <<< "$(curl -s https://storage.googleapis.com/kubernetes-helm/helm-v2.9.0-linux-amd64.tar.gz | tar xz)"
 ```
-
 2. create OpenShift project for Helm server (`tiller`)
-
 ```
 oc new-project tiller
 ```
 
 3. set the tiller project/namespace .. that will enable Helm client to fetch the server-side
-
 ```
 export TILLER_NAMESPACE=tiller
 ```
 
 4. initialize Helm client
-
 ```
 cd linux-amd64
 ./helm init
 ```
 
 5. set the service-account for Helm server to give it the required access privileges
-
 ```
 oc process -f https://github.com/openshift/origin/raw/master/examples/helm/tiller-template.yaml -p TILLER_NAMESPACE="${TILLER_NAMESPACE}" -p HELM_VERSION=v2.9.0 | oc create -f -
 ```
@@ -63,7 +57,7 @@ Server: &version.Version{SemVer:"v2.9.0", GitCommit:"f6025bb9ee7daf9fee0026541c9
 ```
 
 
-## Deploy App Connect
+### Deploy App Connect
 
 1.  create a project/namespace
 ```
@@ -120,6 +114,7 @@ helm install --name ace-dev stable/ibm-ace-server-dev --set license=accept --set
 ```
 oc get pod
 ```
+
 
 the result should similar to this
 
