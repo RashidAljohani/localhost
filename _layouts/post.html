@@ -10,7 +10,7 @@ layout: default
     {% if page.author %}
       {% for z in page.author %}
         {% assign author = site.data.authors[z] %}
-      <p class="author_title">{{ author.display-name }} <a href="{{ author.twitter }}" target="_blank"><img src="/images/twitter.png"></a> ·  {{ page.date | date: "%B %e, %Y" }}</p>
+      <p class="author_title">{{ author.display-name }} <a href="{{ author.twitter }}" target="_blank"><img class="author_social" src="/images/twitter.png"></a> ·  {{ page.date | date: "%B %e, %Y" }}</p>
       {% endfor %}
     {% endif %}
   
