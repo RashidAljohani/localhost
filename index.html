@@ -15,13 +15,15 @@ layout: default
         <div class="post-tags">
           {% if post %}
             {% assign categories = post.categories %}
+            <h2>1 {{ categories }}</h2>
           {% else %}
             {% assign categories = page.categories %}
+            <h2>2 {{ categories }}</h2>
           {% endif %}
           {% for category in categories %}
-            {% if category != nil %}
+             <h2>3 {{ category }}</h2>
+             <h2>4 {{ categories }}</h2>
             <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a>
-            {% endif %}
             {% unless forloop.last %}&nbsp;{% endunless %}
           {% endfor %}
         </div>
