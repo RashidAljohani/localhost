@@ -31,6 +31,21 @@ spec:
         preference: Italy
 ```
 
+
+```yaml
+kind: database
+metadata:
+    name: my-database-example
+spec:
+    replicationFactor: 3
+    autoscale: true
+    backup: hourly
+    geography:
+        restriction: EU
+        preference: Italy
+```
+
+
 * enable auto scaling
 * automate data backup
 * apply data locality regulations (e.g. GDPR)

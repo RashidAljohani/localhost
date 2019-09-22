@@ -41,6 +41,7 @@ body {
 iframe{
   margin-left: auto;  
   margin-right: auto; 
+  display: block
 }
 
 
@@ -672,9 +673,7 @@ Modules - reusable parts of our design
   text-decoration: none;
 }
 
-#carbonads a:hover {
-  color: #00B199;
-}
+
 
 #carbonads span {
   position: relative;
