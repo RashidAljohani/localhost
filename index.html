@@ -19,7 +19,7 @@ layout: default
             {% assign categories = page.categories %}
           {% endif %}
           {% for category in categories %}
-            {% if category != "" %}
+            {% if category != nil %}
             <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a>
             {% endif %}
             {% unless forloop.last %}&nbsp;{% endunless %}
