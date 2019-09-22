@@ -11,16 +11,17 @@ layout: default
           <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
         </div>
       </a>
+
+      <div class="post-tags">
           {% if post %}
             {% assign categories = post.categories %}
           {% else %}
             {% assign categories = page.categories %}
           {% endif %}
           {% for category in categories %}
-          <div class="post-tags">
             <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a>
           {% endfor %}
-          </div>
+      </div>
         
      
       <div class="entry">
