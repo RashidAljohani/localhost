@@ -5,7 +5,6 @@ permalink: /tracks/
 ---
 
 
-<iframe src="https://open.spotify.com/track/21jGcNKet2qwijlDFuPiPb" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/adPpG0Dnxeg?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-<iframe src="https://open.spotify.com/track/7pYUDMzNYVA11EzC7Drg73" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/RfAHBVMguDQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
