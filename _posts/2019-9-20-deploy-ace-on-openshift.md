@@ -22,7 +22,7 @@ Let's demonstrates that by deploying [App Connect](https://www.ibm.com/support/k
 ## Install Helm
 
 1. download Helm client
-```
+```bash
 source /dev/stdin <<< "$(curl -s https://storage.googleapis.com/kubernetes-helm/helm-v2.9.0-linux-amd64.tar.gz | tar xz)"
 ```
 2. create OpenShift project for Helm server (`tiller`)
@@ -31,7 +31,7 @@ oc new-project tiller
 ```
 
 3. set the tiller project/namespace .. that will enable Helm client to fetch the server-side
-```
+```bash
 export TILLER_NAMESPACE=tiller
 ```
 
@@ -42,12 +42,12 @@ cd linux-amd64
 ```
 
 5. set the service-account for Helm server to give it the required access privileges
-```
+```bash
 oc process -f https://github.com/openshift/origin/raw/master/examples/helm/tiller-template.yaml -p TILLER_NAMESPACE="${TILLER_NAMESPACE}" -p HELM_VERSION=v2.9.0 | oc create -f -
 ```
 
 6. verify Helm client and server deployment
-```
+```bash
 ./helm version
 Client: &version.Version{SemVer:"v2.9.0", GitCommit:"f6025bb9ee7daf9fee0026541c90a6f557a3e0bc", GitTreeState:"clean"}
 Server: &version.Version{SemVer:"v2.9.0", GitCommit:"f6025bb9ee7daf9fee0026541c90a6f557a3e0bc", GitTreeState:"clean"}
@@ -62,47 +62,47 @@ oc new-project ace
 ```
 
 2. grant tiller to access the project
-```
+```bash
 oc policy add-role-to-user edit "system:serviceaccount:${TILLER_NAMESPACE}:tiller"
 ```
 
 3. apply SCC to enable ace with the necessary access permissions
-```
+```bash
 oc create -f https://raw.githubusercontent.com/IBM/cloud-pak/master/spec/security/scc/ibm-anyuid-scc.yaml
 ```
 
 4. create a service-account for to blind the SCC with ace deployment 
-```
+```bash
 oc create sa ibm-ace-sa
 ```
 
 5. add the SCC to the service account
-```
+```bash
 oc adm policy add-scc-to-user ibm-anyuid-scc -z ibm-ace-sa
 ```
 
 7. add IBM charts to your local repo
-```
+```bash
 helm repo add stable https://raw.githubusercontent.com/IBM/charts/master/repo/stable
 ```
 
 8. load App Connect image to local docker registry
-```
+```bash
 docker load -i ibm-ace-server-11.0.0.5.tar.gz
 ```
 
 9. tag App Connect image with your registry host
-```
+```bash
 docker tag ibm-ace-server:11.0.0.5 docker-registry.default.svc:5000/ace/ibm-ace-server:11.0.0.5
 ```
 
 10. push App Connect image to cluster registry
-```
+```bash
 docker push docker-registry.default.svc:5000/ace/ibm-ace-server:11.0.0.5
 ```
 
 11. deploy App Connect 
-```
+```bash
 helm install --name ace-dev stable/ibm-ace-server-dev --set license=accept --set image.repository.aceonly={docker-repo/ace-image-name} --set image.tag={image-tag}
 ```
 * ` you may update the chart values: image path & tag via the cli`
