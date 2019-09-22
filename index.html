@@ -20,8 +20,6 @@ layout: default
           {% for category in categories %}
           <div class="post-tags">
             <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a>
-            {% unless forloop.last %}&nbsp;{% endunless %}
-          </div>
           {% endfor %}
         
       </a>
