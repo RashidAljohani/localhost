@@ -18,7 +18,7 @@ Operator is a method of packaging and deploying Kubernetes native applications. 
 
 Here's an example of an Operator that:
 
-```
+```md
 kind: database
 metadata:
     name: my-database-example
