@@ -7,11 +7,10 @@ layout: default
     <article class="post">
       <a href="{{ site.baseurl }}{{ post.url }}">
         <h1>{{ post.title }}</h1>
-
         <div>
           <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
         </div>
-
+      </a>
           {% if post %}
             {% assign categories = post.categories %}
           {% else %}
@@ -21,8 +20,9 @@ layout: default
           <div class="post-tags">
             <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a>
           {% endfor %}
+          </div>
         
-      </a>
+     
       <div class="entry">
         <img src="{{ site.baseurl }}{{ post.image }}">
         {{ post.excerpt }}
