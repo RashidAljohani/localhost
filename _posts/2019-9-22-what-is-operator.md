@@ -18,7 +18,7 @@ Operator is a method of packaging and deploying Kubernetes native applications. 
 
 Here's an example of an Operator that:
 
-```YAML
+```
 kind: database
 metadata:
     name: my-database-example
@@ -37,6 +37,6 @@ spec:
 * apply locations preference
 
 
-## Demo - Deploy Operator on OpenShift 
+**Demo - Deploy Operator on OpenShift**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HzkE7CZU7Bg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
