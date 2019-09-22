@@ -41,6 +41,6 @@ spec:
 **Demo - Deploy Operator on OpenShift**
 
 <div class="iframe-container">
-  <iframe width="1425" height="559" src="https://www.youtube-nocookie.com/embed/HzkE7CZU7Bg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/HzkE7CZU7Bg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
