@@ -3,7 +3,7 @@ layout: post
 title:  Install Blockchain in seconds
 categories: [Blockchain, OpenShift]
 excerpt: Get Hyperledger Fabric enviroment ready in your OpenShift cluster 
-image: /images/blogs/install-Blockchain-in-5-seconds/banner.png
+image: /images/blogs/install-Blockchain-in-seconds/banner.png
 author: ["RashidAljohani"]
 ---
 
