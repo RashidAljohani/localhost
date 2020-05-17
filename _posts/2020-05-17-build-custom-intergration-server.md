@@ -26,9 +26,7 @@ git clone https://github.com/RashidAljohani/ace-docker.git
 3. Move/Copy the App Connect file inside the cloned project (`deps` folder)
 
 ```bash
-
 mv ~/ace-developer-11008.tar.gz ~/ace-docker/deps 
-
 ```
  
  Notice that I am using the `ace-developer-11008.tar.gz` in the `Dockerfile`. If you wish to change it, then make sure you update the `Dockerfile` accordingly. 
