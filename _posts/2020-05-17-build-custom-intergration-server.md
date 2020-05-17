@@ -145,7 +145,7 @@ ENTRYPOINT ["runaceserver"]
 
 Notice that after `USER aceuser` is set, the file starts installing the custom libraries
 
-```Dockerfile
+```docker
 WORKDIR /var/mqsi/
 RUN . /opt/ibm/ace-11/server/bin/mqsiprofile && \
     npm install loopback-connector-mongodb --save
