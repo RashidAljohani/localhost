@@ -36,7 +36,7 @@ mv ~/ace-developer-11008.tar.gz ~/ace-docker/deps
 
 4. Edit the [Dockerfile](https://github.com/RashidAljohani/ace-docker/blob/master/ubi/Dockerfile.aceonly#L95) to install `LoopBack MongoDB connector`
 
-```
+```bash
 FROM golang:1.10.3 as builder
 
 WORKDIR /go/src/github.com/ot4i/ace-docker/
