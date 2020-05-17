@@ -36,7 +36,7 @@ mv ~/ace-developer-11008.tar.gz ~/ace-docker/deps
 
 4. Edit the [Dockerfile](https://github.com/RashidAljohani/ace-docker/blob/master/ubi/Dockerfile.aceonly#L95) to install `LoopBack MongoDB connector`
 
-```bash
+```docker
 FROM golang:1.10.3 as builder
 
 WORKDIR /go/src/github.com/ot4i/ace-docker/
@@ -141,6 +141,7 @@ ENV LOG_FORMAT=basic
 # Set entrypoint to run management script
 ENTRYPOINT ["runaceserver"]
 ```
+
 
 Notice that after `USER aceuser` is set, the file starts installing the custom libraries
 
