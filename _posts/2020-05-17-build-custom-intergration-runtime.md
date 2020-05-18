@@ -32,7 +32,7 @@ mv ~/ace-developer-11008.tar.gz ~/ace-docker/deps
  Notice that I am using the `ace-developer-11008.tar.gz` in the Dockerfile. If you wish to change it, then make sure you update the Dockerfile accordingly. 
 
 
-4. Edit the [Dockerfile](https://github.com/RashidAljohani/ace-docker/blob/master/ubi/Dockerfile.aceonly#L95) to install **LoopBack MongoDB connector**
+4. Edit the [Dockerfile](https://github.com/RashidAljohani/ace-docker/blob/master/ubi/Dockerfile.aceonly#L95) to install [loopback-connector-mongodb](https://www.npmjs.com/package/loopback-connector-mongodb)
 
 ```docker
 FROM golang:1.10.3 as builder
