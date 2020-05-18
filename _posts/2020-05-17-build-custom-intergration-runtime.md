@@ -20,7 +20,7 @@ App Connect Enterprise provides a lightweight integration runtime to support the
 * Clone the project 
 
 ```bash
-git clone https://github.com/RashidAljohani/ace-docker.git
+git clone https://github.com/ot4i/ace-docker.git
 ```
 
 * Move/Copy the App Connect file inside the cloned project (`deps` folder)
@@ -32,7 +32,17 @@ mv ~/ace-developer-11008.tar.gz ~/ace-docker/deps
  Notice that I am using the `ace-developer-11008.tar.gz` in the Dockerfile. If you wish to change it, then make sure you update the Dockerfile accordingly. 
 
 
-* Edit the [Dockerfile](https://github.com/RashidAljohani/ace-docker/blob/master/ubi/Dockerfile.aceonly#L95) to install [loopback-connector-mongodb](https://www.npmjs.com/package/loopback-connector-mongodb)
+* Inspect the following `Dockerfile`, and notice how [loopback-connector-mongodb](https://www.npmjs.com/package/loopback-connector-mongodb) was added
+
+```docker
+WORKDIR /var/mqsi/
+RUN . /opt/ibm/ace-11/server/bin/mqsiprofile && \
+    npm install loopback-connector-mongodb --save
+```
+
+> Notice that after `USER aceuser` is set, the file starts installing the custom libraries
+
+
 
 ```docker
 FROM golang:1.10.3 as builder
@@ -137,15 +147,6 @@ ENV LOG_FORMAT=basic
 
 # Set entrypoint to run management script
 ENTRYPOINT ["runaceserver"]
-```
-
-
-> Notice that after `USER aceuser` is set, the file starts installing the custom libraries
-
-```docker
-WORKDIR /var/mqsi/
-RUN . /opt/ibm/ace-11/server/bin/mqsiprofile && \
-    npm install loopback-connector-mongodb --save
 ```
 
 * Navigate to `ace-docker` folder and build the custom ACE integration server
