@@ -14,16 +14,16 @@ App Connect Enterprise provides a lightweight integration runtime to support the
 
 
 
-1. Download [App Connect developer edition](https://developer.ibm.com/integration/docs/app-connect-enterprise/get-started/) (_Linux flavor_)
+* Download [App Connect developer edition](https://developer.ibm.com/integration/docs/app-connect-enterprise/get-started/) (_Linux flavor_)
 
 
-2. Clone the project 
+* Clone the project 
 
 ```bash
 git clone https://github.com/RashidAljohani/ace-docker.git
 ```
 
-3. Move/Copy the App Connect file inside the cloned project (`deps` folder)
+* Move/Copy the App Connect file inside the cloned project (`deps` folder)
 
 ```bash
 mv ~/ace-developer-11008.tar.gz ~/ace-docker/deps 
@@ -32,7 +32,7 @@ mv ~/ace-developer-11008.tar.gz ~/ace-docker/deps
  Notice that I am using the `ace-developer-11008.tar.gz` in the Dockerfile. If you wish to change it, then make sure you update the Dockerfile accordingly. 
 
 
-4. Edit the [Dockerfile](https://github.com/RashidAljohani/ace-docker/blob/master/ubi/Dockerfile.aceonly#L95) to install [loopback-connector-mongodb](https://www.npmjs.com/package/loopback-connector-mongodb)
+* Edit the [Dockerfile](https://github.com/RashidAljohani/ace-docker/blob/master/ubi/Dockerfile.aceonly#L95) to install [loopback-connector-mongodb](https://www.npmjs.com/package/loopback-connector-mongodb)
 
 ```docker
 FROM golang:1.10.3 as builder
@@ -148,7 +148,7 @@ RUN . /opt/ibm/ace-11/server/bin/mqsiprofile && \
     npm install loopback-connector-mongodb --save
 ```
 
-5. Navigate to `ace-docker` folder and build the custom ACE integration server
+* Navigate to `ace-docker` folder and build the custom ACE integration server
 
 ```bash
 cd ~/ace-docker
