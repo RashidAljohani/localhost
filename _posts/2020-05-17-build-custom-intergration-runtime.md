@@ -90,7 +90,6 @@ COPY deps/OpenTracing/config/* ./etc/ACEOpenTracing/
 WORKDIR /opt/ibm
 
 RUN microdnf install --nodocs openssl util-linux unzip python2 && \
-#    microdnf install rh-nodejs10 && \
     microdnf clean all
 
 COPY --from=builder /opt/ibm/ace-11 /opt/ibm/ace-11
