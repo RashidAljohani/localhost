@@ -3,11 +3,11 @@ layout: post
 title:  Deploy MQ Cluster Across Multicloud
 categories: [MQ,OpenShift]
 excerpt: Modernize Queue Managers across legacy and Cloud environments 
-image: /images/blogs/Deploy-MQ-Cluster-Across-Multicloud/banner.png
+image: /images/blogs/deploy-mq-cluster-across-multicloud/banner.png
 author: ["RashidAljohani"]
 ---
 
-![](/images/blogs/Deploy-MQ-Cluster-Across-Multicloud/banner.png)
+![](/images/blogs/deploy-mq-cluster-across-multicloud/banner.png)
 
 
 A few weeks back, one of my customers asked me the possibility to configure MQ clusters across multiple environments - as part of the modernization journey to moving MQ gradually from legacy infrastructure to containerization environments.
