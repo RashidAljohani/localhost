@@ -92,6 +92,7 @@ $ curl -sL https://github.com/operator-framework/operator-lifecycle-manager/rele
 ```
 
 * Install the MetalLB operator
+
 ```bash
 $ kubectl create -f https://operatorhub.io/install/metallb-operator.yaml
 ```
@@ -99,7 +100,7 @@ $ kubectl create -f https://operatorhub.io/install/metallb-operator.yaml
 * Validate the csv status
 
 ```bash
-kubectl get csv -n my-metallb-operator
+$ kubectl get csv -n my-metallb-operator
 ```
 
 * Deply Metallb CR
