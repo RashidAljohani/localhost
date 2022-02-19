@@ -21,7 +21,7 @@ Aspera HSTS, by design, requires a load balancing feature that exposes multiple 
 
 One of the solution, you could of spin-off Aspera Proxy, and turn on the balancing feature in the proxy server's `aspera.conf`, set `<balancing>`
 
-```bash
+```xml
 <rule host_ip="10.20.101.151">
     <balancing>round_robin</balancing>
     <hosts>
@@ -51,7 +51,7 @@ First, let's understand some of the MetalLB CRD concepts:
 
 * Creat Aspera HSTS CR
 
-```bash
+```yaml
 apiVersion: hsts.aspera.ibm.com/v1
 kind: IbmAsperaHsts
 metadata:
@@ -87,25 +87,25 @@ spec:
 
 * Install Operator Lifecycle Manager (OLM), in case you do not have it in your cluster
 
-```bash
+```yaml
 $ curl -sL https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.20.0/install.sh | bash -s v0.20.0
 ```
 
 * Install the MetalLB operator
 
-```bash
+```yaml
 $ kubectl create -f https://operatorhub.io/install/metallb-operator.yaml
 ```
 
 * Validate the csv status
 
-```bash
+```yaml
 $ kubectl get csv -n my-metallb-operator
 ```
 
 * Deply Metallb CR
 
-```bash
+```yaml
 apiVersion: metallb.io/v1beta1
 kind: MetalLB
 metadata:
@@ -116,7 +116,7 @@ metadata:
 
 * Create an address pool
 
-```bash
+```yaml
 apiVersion: metallb.io/v1alpha1
 kind: AddressPool
 metadata:
