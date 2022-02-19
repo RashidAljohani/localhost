@@ -47,6 +47,7 @@ First, let's understand some of the MetalLB CRD concepts:
 1. **MetalLB**: is the Schema for the metallbs API
 2. **AddressPool**: is a list of IP address ranges over which `MetalLB` has authority.
 
+
 ## Steps
 
 * Creat Aspera HSTS CR
@@ -87,19 +88,19 @@ spec:
 
 * Install Operator Lifecycle Manager (OLM), in case you do not have it in your cluster
 
-```yaml
+```bash
 $ curl -sL https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.20.0/install.sh | bash -s v0.20.0
 ```
 
 * Install the MetalLB operator
 
-```yaml
+```bash
 $ kubectl create -f https://operatorhub.io/install/metallb-operator.yaml
 ```
 
 * Validate the csv status
 
-```yaml
+```bash
 $ kubectl get csv -n my-metallb-operator
 ```
 

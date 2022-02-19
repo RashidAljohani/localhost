@@ -100,7 +100,7 @@ spec:
 
 * Setup the mqsc configurations
 
-```
+```bash
 ALTER QMGR CHLAUTH(DISABLED)
 ALTER QMGR REPOS(SOLARSYS)
 
