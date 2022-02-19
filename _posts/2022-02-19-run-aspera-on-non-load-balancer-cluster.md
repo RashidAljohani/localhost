@@ -44,8 +44,8 @@ I've came across [Metallb](https://metallb.universe.tf/);
 
 First, let's understand some of the MetalLB CRD concepts:
 
-* MetalLB: is the Schema for the metallbs API
-* AddressPool: is a list of IP address ranges over which `MetalLB` has authority.
+1. **MetalLB**: is the Schema for the metallbs API
+2. **AddressPool**: is a list of IP address ranges over which `MetalLB` has authority.
 
 ## Steps
 
