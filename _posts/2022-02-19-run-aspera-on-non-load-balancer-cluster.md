@@ -16,6 +16,7 @@ I was asked to work on an MVP involving multiple cloud environments; private clo
 
 Aspera HSTS, by design, requires a load balancing feature that exposes multiple UDP ports on the reverse proxy. Ports are opened based on the value specified by `<proxy_port>.` 
 
+![](/images/blogs/run-aspera-on-non-load-balancer-cluster/aspera-nlb.png)
 
 > 33001 is the default if not specified.
 
@@ -33,7 +34,7 @@ One of the solution, you could of spin-off Aspera Proxy, and turn on the balanci
 </rule>
 ```
 
-![](/images/blogs/run-aspera-on-non-load-balancer-cluster/aspera-nlb.png)
+
 
 
 We were interested in looking into a solution that can be hosted within the containerization environments to make an Aspera HSTS accessible through external clients. 
