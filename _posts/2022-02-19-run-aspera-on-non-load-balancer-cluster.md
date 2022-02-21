@@ -20,7 +20,7 @@ Aspera HSTS, by design, requires a load balancing feature that exposes multiple 
 
 > 33001 is the default if not specified.
 
-One of the solution, you could of spin-off Aspera Proxy, and turn on the balancing feature in the proxy server's `aspera.conf`, set `<balancing>`
+One of the solutions, you could have spin-off the Aspera Proxy, and turn on the balancing feature in the proxy server's `aspera.conf`, set `<balancing>`
 
 ```xml
 <rule host_ip="10.20.101.151">
@@ -33,8 +33,6 @@ One of the solution, you could of spin-off Aspera Proxy, and turn on the balanci
     <keyfile>/home/$(user)/.ssh/id_rsa</keyfile>
 </rule>
 ```
-
-
 
 
 We were interested in looking into a solution that can be hosted within the containerization environments to make an Aspera HSTS accessible through external clients. 
