@@ -33,7 +33,7 @@ imagePullSecrets:
   - name: container-registry-secret
 ```
 
-> Note that I've added the requried secrets to access `GitHub` and `Quay.i`.
+> Note that I've added the requried secrets to access `GitHub` and `Quay.io`.
 
 
 ## Define Tekton Tasks
@@ -100,7 +100,7 @@ spec:
       name: varlibcontainers
 ```
 
-* **Task**: Create an `IntegrationS`erver instance
+* **Task**: Create an `IntegrationServer` instance
 
 ```yaml
 apiVersion: tekton.dev/v1beta1
