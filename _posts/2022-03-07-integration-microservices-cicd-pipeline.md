@@ -276,4 +276,4 @@ volumes:
 - secret
 ```
 
-> Referance https://docs.openshift.com/container-platform/4.8/cicd/pipelines/using-pods-in-a-privileged-security-context.html
+> Referance [Using pods in a privileged security context](https://docs.openshift.com/container-platform/4.8/cicd/pipelines/using-pods-in-a-privileged-security-context.html)
