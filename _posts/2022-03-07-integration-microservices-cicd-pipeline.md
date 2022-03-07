@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Integration Microservices CI/CD Pipeline
-categories: [ace,ci,cd,tekton,argocd]
+categories: [ace,tekton]
 excerpt: Over a coffee, a friend of mine asked me .. why enterprises should consider integration modernization? Indeed, it is a big question, and you can write a book to answer that.
 image: /images/blogs/integration-nicroservices-cicd-pipeline/banner.png
 author: ["RashidAljohani"]
@@ -276,3 +276,4 @@ volumes:
 - secret
 ```
 
+> Referance https://docs.openshift.com/container-platform/4.8/cicd/pipelines/using-pods-in-a-privileged-security-context.html
