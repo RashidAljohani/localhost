@@ -140,6 +140,7 @@ spec:
 ## Define Tekton Pipeline Resources
 
 * **PipelineResource**: type git server
+
 ```yaml
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource
