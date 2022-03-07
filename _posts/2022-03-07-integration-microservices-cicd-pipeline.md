@@ -18,6 +18,24 @@ In my opinion, unifying development and operational practices are vital drivers;
 
 This blog discusses the steps required to start building your App Connect Tekton pipeline
 
+## Create Service Account
+
+```yaml
+kind: ServiceAccount
+apiVersion: v1
+metadata:
+  name: pipeline-bot
+  namespace: openshift-pipelines
+secrets:
+  - name: basic-user-git
+  - name: container-registry-secret
+imagePullSecrets:
+  - name: container-registry-secret
+```
+
+> Note that I've added the requried secrets to access `GitHub` and `Quay.i`.
+
+
 ## Define Tekton Tasks
 
 * **Task**: Clone Git repo, build, and push a container image to Container Registry
@@ -82,7 +100,7 @@ spec:
       name: varlibcontainers
 ```
 
-* **Task**: Create an IntegrationServer instance
+* **Task**: Create an `IntegrationS`erver instance
 
 ```yaml
 apiVersion: tekton.dev/v1beta1
@@ -275,5 +293,12 @@ volumes:
 - projected
 - secret
 ```
+
+* Add the custom `SecurityContextConstraints` to the `ServiceAccount`
+
+```bash
+$ oc adm policy add-scc-to-user custom-scc-tekton -z pipeline-bot -n openshift-pipelines
+```
+
 
 > Referance [Using pods in a privileged security context](https://docs.openshift.com/container-platform/4.8/cicd/pipelines/using-pods-in-a-privileged-security-context.html)
