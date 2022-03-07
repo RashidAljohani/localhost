@@ -14,9 +14,9 @@ author: ["RashidAljohani"]
 Over a coffee, a friend of mine asked me .. why enterprises should consider integration modernization? Indeed, it is a big question, and you can write a book to answer that. 
 > An IBM Redbooks publication: [Accelerating Modernization with Agile Integration](http://www.redbooks.ibm.com/abstracts/sg248452.html?Open)
 
-In my opinion, unifying development and operational practices are vital drivers; simultaneously, it significantly expedites business results as part of the automation pipeline.
+In my opinion, unifying development and operational practices are vital drivers; simultaneously, it significantly expedites business results. Automated pipelines can simplify various developmental and operational activities such as scanning, building, and deploying apps.
 
-This blog discusses the steps required to start building your App Connect Tekton pipeline
+In today's blog, we will discuss a few steps that are required to start building your automated pipelines using [Tekton](https://tekton.dev).
 
 ## Create Service Account
 
