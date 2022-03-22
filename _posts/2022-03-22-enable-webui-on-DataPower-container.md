@@ -2,7 +2,7 @@
 layout: post
 title:  Enable DataPower WebUI on kubernetes
 categories: [DataPower,kubernetes]
-excerpt: Active DataPower webui on kubernetes environments
+excerpt: Activate DataPower webui on kubernetes environments
 image: /images/blogs/enable-webui-on-DataPower-container/banner.png
 author: ["RashidAljohani"]
 ---
