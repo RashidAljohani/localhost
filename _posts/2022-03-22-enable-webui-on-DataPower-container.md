@@ -15,7 +15,7 @@ For operation or administration reasons, you may want to enable DataPower Web UI
 
 Below are the 4 steps you need to perform that:
 
-1. Create `ConfigMap` to persis DataPower Configuration
+* Create `ConfigMap` to persis DataPower Configuration
 
 ```bash
 cat <<EOF | kubectl apply -f -
@@ -38,7 +38,7 @@ EOF
 ```
 
 
-2. Patch the deployment DataPowerService with `ConfigMap`
+* Patch the deployment DataPowerService with `ConfigMap`
 
 ```yaml
 ...
@@ -50,13 +50,13 @@ EOF
 ..
 ```
 
-3. Get DataPower Admin password
+* Get DataPower Admin password
 
 ```bash
-$ oc get secret $(oc get secret |  grep gw-admin | awk '{ print $1 }') --template={{.data.password}} | base64 -d 
+$ oc get secret $(oc get secret |  grep gw-admin | awk '{ print $1 }') --template="{{.data.password}}" | base64 -d 
 ```
 
-4. Create the Web UI Route
+* Create the Web UI Route
 
 ```bash
 $ oc create route passthrough --service=<gw-datapower-service> --port=9090
