@@ -230,3 +230,7 @@ done
 
 
 For referance, always refer to official documentations [apic commands](https://www.ibm.com/docs/en/api-connect/10.0.1.x?topic=information-toolkit-command-line-tool-reference)
+
+
+
+Shout out to the [Kai Mike Zhang](https://www.linkedin.com/in/mkz100), the above works were insprired by the orignal masterpiece he created.
