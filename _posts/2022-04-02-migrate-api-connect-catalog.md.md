@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Migrate API Connect Catalogs
+title:  Migrate API Connect Catalogs using CLIs
 categories: [apiconnect,production]
-excerpt: Over a coffee, a friend of mine asked me .. why enterprises should consider integration modernization? Indeed, it is a big question, and you can write a book to answer that.
+excerpt: A customer of mine was using one of the earliest releases of `v10`. The standard backup and restore proceess wasn't applicable due to several reasons.
 image: /images/blogs/Migrate-API-Connect-Catalog/banner.png
 author: ["RashidAljohani"]
 ---
@@ -11,7 +11,7 @@ author: ["RashidAljohani"]
 ![](/images/blogs/Migrate-API-Connect-Catalog/banner.png)
 
 
-A customer of mine was using one of the earliest releases of `v10.0.0`. The standard backup and restore proceess wasn't applicable due to several reasons. 
+A customer of mine was using one of the earliest releases of `v10`. The standard backup and restore proceess wasn't applicable due to several reasons. 
 
 The goal was to migrate `Catalogs` content from the current deployment to the new eus deployment - `v10.0.1.5-eus` at the time.
 
