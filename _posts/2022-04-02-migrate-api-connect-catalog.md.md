@@ -2,7 +2,7 @@
 layout: post
 title:  Migrate API Connect Catalogs using CLIs
 categories: [apiconnect,migration]
-excerpt: A customer of mine was using one of the earliest releases of `v10`. The standard backup and restore proceess wasn't applicable due to several reasons.
+excerpt: A customer of mine was using one of the earliest releases of v10. The standard backup and restore proceess wasn't applicable due to several reasons.
 image: /images/blogs/Migrate-API-Connect-Catalog/banner.png
 author: ["RashidAljohani"]
 ---
