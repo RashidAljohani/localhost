@@ -11,7 +11,7 @@ author: ["RashidAljohani"]
 ![](/images/blogs/Maintain-DataPower-Configurations-on-Clouds/banner.png)
 
 
-I was asked recently how to maintain DataPower, container-based, congigrations that are made via web-mgmt UI. DataPowerService supports the Storage property which provides a list of storage definitions. There are two options: `ephermeral` and `persistent`.
+I was asked recently how to maintain DataPower, container-based, configurations that were made via web-mgmt UI. DataPowerService supports the Storage property which provides a list of storage definitions. There are two options: `ephermeral` and `persistent`.
 
 In the persistent mode, the CR creates a `persistent volume claims` to request a `persistent volumes` - a mechanism that keeps data even after the pod is deleted or restarted.
 
