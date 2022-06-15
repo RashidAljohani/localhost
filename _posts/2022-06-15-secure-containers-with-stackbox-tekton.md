@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Secure containers with StackRox & Tekton
-categories: [security,tekton]
+categories: [security,tekton,stackrox]
 excerpt: Security continues to be a critical need for enterprises adopting cloud-native development.
 image: /images/blogs/Secure-containers-with-StackRox-Tekton/banner.png
 author: ["RashidAljohani"]
