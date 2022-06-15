@@ -2,7 +2,7 @@
 layout: post
 title:  Secure containers with StackRox & Tekton
 categories: [security,tekton]
-excerpt: Over a coffee, a friend of mine asked me .. why enterprises should consider integration modernization? Indeed, it is a big question, and you can write a book to answer that.
+excerpt: Security continues to be a critical need for enterprises adopting cloud-native development.
 image: /images/blogs/Secure-containers-with-StackRox-Tekton/banner.png
 author: ["RashidAljohani"]
 ---
