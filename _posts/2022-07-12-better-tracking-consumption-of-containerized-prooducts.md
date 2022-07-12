@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Better Tracking Consumption of Containerized Prooducts
+title:  Better Tracking Consumption of Containerized Products
 categories: [license,CloudPak]
 excerpt: I always advise using the licensing operator for better tracking consumption.
 image: /images/blogs/better-tracking-consumption-of-containerized-prooducts/banner.png
