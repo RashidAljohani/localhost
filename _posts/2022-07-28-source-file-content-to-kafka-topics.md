@@ -94,7 +94,9 @@ spec:
 ```
 
 > The intance is using the custom image via `spec.image`
+
 > The intance enables the use of KafkaConnectors via `metadata.annotations.eventstreams.ibm.com/use-connector-resources: "true"`
+
 > The ConfigMap is mounted via `spec.externalConfiguration`, files will store at `/opt/kafka/external-configuration/`
 
 
