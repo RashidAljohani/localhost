@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Source file contents to Kafka topics
+title:  Source file content to Kafka topics
 categories: [kafka, eda]
 excerpt: 
-image: /images/blogs/stream-files-content-to-kafka-topics/banner.png
+image: /images/blogs/source-file-content-to-kafka-topics/banner.png
 author: ["RashidAljohani"]
 ---
 
 
-![](/images/blogs/stream-files-content-to-kafka-topics/banner.png)
+![](/images/blogs/source-file-content-to-kafka-topics/banner.png)
 
 I came across recently to use-case where a customer wanted to stream metadata from a file to a Kafka topic. I found it an interesting problem because of the typical behavior of cloud-native applications with respect to states or applications with volumes - specific questions like: where will those files be stored? Dynamic options to update the files and mount them to the source components.
 
