@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Source file content to Kafka topics
-categories: [kafka, eda]
+categories: [apache, kafka, eda]
 excerpt: I came across recently to use-case where a customer wanted to stream metadata from a file to a Kafka topic. I found it an interesting problem because of the typical behavior of
 image: /images/blogs/source-file-content-to-kafka-topics/banner.png
 author: ["RashidAljohani"]

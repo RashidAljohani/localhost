@@ -7,7 +7,6 @@ image: /images/blogs/Secure-containers-with-StackRox-Tekton/banner.png
 author: ["RashidAljohani"]
 ---
 
-
 ![](/images/blogs/Secure-containers-with-StackRox-Tekton/banner.png)
 
 Security continues to be a critical need for enterprises adopting cloud-native development. [Tekton](https://tekton.dev/) is a cloud-native solution for building CI/CD pipeline, and [StackRox](https://www.stackrox.io/) is a full-lifecycle Kubernetes security solution, which allows you do detect, manage and mitigate security risks - StackRox is the sister project of [Red Hat Advanced Cluster Security](https://www.redhat.com/en/resources/advanced-cluster-security-for-kubernetes-datasheet). 
