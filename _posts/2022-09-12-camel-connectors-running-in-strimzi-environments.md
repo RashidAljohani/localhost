@@ -15,7 +15,7 @@ author: ["RashidAljohani"]
 
 Apache Camel has just [released](https://camel.apache.org/blog/Camel-Kafka-connector-release-0.1.0/) a set of connectors which can be used to leverage the broad ecosystem of Camel in Kafka Connect. In the follow steps you will learn how to use Apache Camel connectors in a Strimzi environment - [IBM Events Streams](https://ibm.github.io/event-streams/about/overview/)
 
-### Demo flow
+## Demo flow
 
 ![](/images/blogs/camel-connectors-running-in-strimzi-environments/demo.png)
 
