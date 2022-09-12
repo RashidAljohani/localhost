@@ -13,7 +13,7 @@ author: ["RashidAljohani"]
 
 [Apache Camel](https://camel.apache.org/) provides a mature integration framework that empowers you to quickly and easily integrate various systems consuming or producing data. On the other hand, [Kafka](https://kafka.apache.org/) provides a distributed streaming platform that enables the development of real-time and event-driven applications. How powerful will it be if both frameworks work together? 
 
-Apache Camel has just [released](https://camel.apache.org/blog/Camel-Kafka-connector-release-0.1.0/) a set of connectors which can be used to leverage the broad ecosystem of Camel in Kafka Connect. In the follow steps you will learn how to use Apache Camel connectors in a Kafka environment - [IBM Events Streams](https://ibm.github.io/event-streams/about/overview/)
+Apache Camel has just [released](https://camel.apache.org/blog/Camel-Kafka-connector-release-0.1.0/) a set of connectors which can be used to leverage the broad ecosystem of Camel in Kafka Connect. In the follow steps you will learn how to use Apache Camel connectors in a Kafka environment - [IBM Event Streams](https://ibm.github.io/event-streams/about/overview/)
 
 # Demo flow
 
@@ -140,8 +140,6 @@ spec:
     mq.connection.name.list: qm-lite-ibm-mq.cp4i.svc.cluster.local(1414)
     mq.channel.name: MVP.ES.SVRCONN
     mq.queue: MVP.FROM.ACE.Q
-    mq.user.name: ""
-    mq.password: ""
     topic: connect-mq-source
     mq.connection.mode: client
     mq.record.builder: com.ibm.eventstreams.connect.mqsource.builders.JsonRecordBuilder
