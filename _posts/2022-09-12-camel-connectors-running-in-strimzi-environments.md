@@ -7,7 +7,9 @@ image: /images/blogs/camel-connectors-running-in-strimzi-environments/banner.jpe
 author: ["RashidAljohani"]
 ---
 
+
 ![](/images/blogs/camel-connectors-running-in-strimzi-environments/banner.jpeg)
+
 
 [Apache Camel](https://camel.apache.org/) provides a mature integration framework that empowers you to quickly and easily integrate various systems consuming or producing data. On the other hand, [Strimzi](https://strimzi.io/) provides a set of operators and container images for running Kafka on Kubernetes. How powerful will it be if both frameworks work together? 
 
