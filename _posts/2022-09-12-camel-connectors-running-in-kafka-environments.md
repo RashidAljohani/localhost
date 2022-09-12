@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Camel Connectors Running in Strimzi environments
+title: Camel Connectors Running in Kafka environments
 categories: [apache, kafka, eda]
 excerpt: Apache Camel has just released a set of connectors which can be used to leverage the broad ecosystem of Camel in Kafka Connect
-image: /images/blogs/camel-connectors-running-in-strimzi-environments/banner.png
+image: /images/blogs/camel-connectors-running-in-kafka-environments/banner.png
 author: ["RashidAljohani"]
 ---
 
 
-![](/images/blogs/camel-connectors-running-in-strimzi-environments/banner.png)
+![](/images/blogs/camel-connectors-running-in-kafka-environments/banner.png)
 
 
-[Apache Camel](https://camel.apache.org/) provides a mature integration framework that empowers you to quickly and easily integrate various systems consuming or producing data. On the other hand, [Strimzi](https://strimzi.io/) provides a set of operators and container images for running Kafka on Kubernetes. How powerful will it be if both frameworks work together? 
+[Apache Camel](https://camel.apache.org/) provides a mature integration framework that empowers you to quickly and easily integrate various systems consuming or producing data. On the other hand, [Kafka](https://kafka.apache.org/) provides a distributed streaming platform that enables the development of real-time and event-driven applications. How powerful will it be if both frameworks work together? 
 
-Apache Camel has just [released](https://camel.apache.org/blog/Camel-Kafka-connector-release-0.1.0/) a set of connectors which can be used to leverage the broad ecosystem of Camel in Kafka Connect. In the follow steps you will learn how to use Apache Camel connectors in a Strimzi environment - [IBM Events Streams](https://ibm.github.io/event-streams/about/overview/)
+Apache Camel has just [released](https://camel.apache.org/blog/Camel-Kafka-connector-release-0.1.0/) a set of connectors which can be used to leverage the broad ecosystem of Camel in Kafka Connect. In the follow steps you will learn how to use Apache Camel connectors in a Kafka environment - [IBM Events Streams](https://ibm.github.io/event-streams/about/overview/)
 
 # Demo flow
 
-![](/images/blogs/camel-connectors-running-in-strimzi-environments/demo.png)
+![](/images/blogs/camel-connectors-running-in-kafka-environments/demo.png)
 
 > I will use MQ Source to publish events in a Kafka topic, and then use AWS Lambda Sink to trigger a serverless function.
 
