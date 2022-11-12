@@ -2,8 +2,9 @@
 <html>
   <head>
     <title>{% if page.title and page.title != "" %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-    {% seo %}
-    {% include meta.html %}
+    
+      {% include meta.html %}
+
 
     <meta name="google-site-verification" content="6rfoisaFmNaEYRHO9HYXh1DfkyRTrWVcs074_lJAHkQ" />
     <meta name="theme-color" content="#000000">
@@ -13,6 +14,7 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />    
     <link rel="icon" type="image/jpg" sizes="32x32" href="{{ site.baseurl }}/images/favicon-32x32.jpg">
 
+    {% seo %}
   </head>
 
   <body>
@@ -62,12 +64,23 @@
     {% include analytics.html %}
   </body>
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({
       google_ad_client: "ca-pub-4900553409357424",
       enable_page_level_ads: true
     });
+  </script> -->
+
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11023687006"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11023687006');
   </script>
+
 
 </html>
