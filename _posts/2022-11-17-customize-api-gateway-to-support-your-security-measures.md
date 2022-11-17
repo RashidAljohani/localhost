@@ -45,25 +45,25 @@ $ apic login --server <apim-endpoint>
 
 * Create a global policy:
 
-```
+```bash
 $ apic global-policies:create --catalog sandbox --configured-gateway-service <api-gateway-service-name> --org <porg-name> --server <apim-endpoint> --scope catalog remove-x-client-ip.yaml
 ```
 
 * List global policies to validate:
 
-```
+```bash
 $ apic global-policies:list-all --catalog sandbox --configured-gateway-service <api-gateway-service-name> --org <porg-name> --server <apim-endpoint> --scope catalog
 ```
 
 * Write the URL of the required global policy to a `.yaml` file:
 
-```
+```bash
 $ apic global-policies:get --catalog sandbox --configured-gateway-service <api-gateway-service-name> --org <porg-name>--server <apim-endpoint> --scope catalog remove-x-client-ip:1.0.0 --fields url
 ```
 
 * Edit the GlobalPolicy.yaml file and replace the string `url` with `global_policy_url`. The resulting file has the following format:
 
-```
+```bash
 global_policy_url: >-
   https://server_host_name/api/catalogs/catalog_id/configured-gateway-services/gateway_service_id/global-policies/policy_id
 ```
@@ -93,7 +93,6 @@ headers: Object
     author: "CSM"
     Access-Control-Allow-Origin: "https://*******.us-south.containers.appdomain.cloud"
     Access-Control-Allow-Credentials: "true"
-    Access-Control-Expose-Headers: "APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-BurstLimit-Limit, X-BurstLimit-Remaining, X-CountLimit-Limit, X-CountLimit-Remaining, Retry-After, X-Global-Transaction-ID, Location, X-APIC-Debug-OAuth-Error, X-APIC-Debug-OAuth-Error-Desc"
 Vary: "Origin"
 Date: "Thu, 17 Nov 2022 11:45:51 GMT"
 body: "{"response":{"code":200,"message":"Hello World!"}}"
