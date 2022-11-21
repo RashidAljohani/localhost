@@ -10,7 +10,7 @@ author: ["RashidAljohani"]
 
 ![](/images/blogs/customize-api-gateway-to-support-your-security-measures/banner.png)
 
-A friend of mine asked me on another day .. how he could help his customers to modify API Connect configuration to support an especial case that was raised by the security team. API Connect uses DataPower as API Gateway to support securing and managing the APIs traffic. Part of that is allowing end-users to define their own policies besides the [built-in](https://www.ibm.com/docs/en/api-connect/10.0.5.x_lts?topic=constructs-built-in-policies) ones. 
+A friend of mine asked me on another day .. how he could help his customers to modify API Connect configuration to support a special case that was raised by the security team. API Connect uses DataPower as API Gateway to support securing and managing the APIs traffic. Part of that is allowing end-users to define their own policies besides the [built-in](https://www.ibm.com/docs/en/api-connect/10.0.5.x_lts?topic=constructs-built-in-policies) ones. 
 
 In the following steps, you will learn how to define a global security policy that removes a particular key from the message's headers as a post-response policy for a gateway service.
 
