@@ -11,7 +11,7 @@ author: ["RashidAljohani"]
 ![](/images/blogs/explore-apache-flink-sql-client/banner.png)
 
 
-In my last blog, I used [Apache Flink](https://nightlies.apache.org/flink/flink-docs-release-1.17/docs/concepts/overview/) to act on streams in real-time using the java framework. In today's post, you will introduce [Apache Flink SQL Client](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/table/sqlclient/).
+In my last blog, I used [Apache Flink](https://nightlies.apache.org/flink/flink-docs-release-1.17/docs/concepts/overview/) to act on streams in real-time using the java framework. In today's post, I will introduce [Apache Flink SQL Client](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/table/sqlclient/).
 
 >The SQL client aims to provide an easy way of writing, debugging, and submitting table programs to a Flink cluster without a single line of Java or Scala code. The SQL Client CLI allows for retrieving and visualizing real-time results from the running distributed application on the command line.
 
@@ -52,7 +52,7 @@ flink-1.17.0/bin/sql-client.sh --jar flink-sql-connector-kafka-1.17.0.jar --jar 
 
 * Flink SQL terminal will pop up, then you can start by creating the SQL table:
 
-```SQL
+```sql
 CREATE TEMPORARY TABLE flaggedEvents (
 >     transaction BIGINT,
 >     action STRING,
@@ -78,6 +78,6 @@ CREATE TEMPORARY TABLE flaggedEvents (
 
 * Finally, you can display events using regular [SQL queries](https://www.geeksforgeeks.org/sql-concepts-and-queries/) like:
 
-```SQL
+```sql
 select * from flaggedEvents;
 ```
