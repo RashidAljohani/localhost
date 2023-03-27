@@ -2,7 +2,7 @@
 layout: post
 title: Explore Apache Flink SQL Client
 categories: [streaming, kafka, flink]
-excerpt: A quickstart on Apache Flink SQL Client
+excerpt: A quickstart app with Apache Flink SQL client
 image: /images/blogs/explore-apache-flink-sql-client/banner.png
 author: ["RashidAljohani"]
 ---
@@ -11,7 +11,7 @@ author: ["RashidAljohani"]
 ![](/images/blogs/explore-apache-flink-sql-client/banner.png)
 
 
-In my last blog, I used [Apache Flink](https://nightlies.apache.org/flink/flink-docs-release-1.17/docs/concepts/overview/) to act on streams in real-time using the java framework. In today's post, I will introduce [Apache Flink SQL Client](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/table/sqlclient/).
+In my [last blog](https://rashidaljohani.github.io/interact-with-IBM-MQ-messages-via-Streaming-app/), I used [Apache Flink](https://nightlies.apache.org/flink/flink-docs-release-1.17/docs/concepts/overview/) to act on streams in real-time using the java framework. In today's post, I will introduce [Apache Flink SQL Client](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/table/sqlclient/).
 
 >The SQL client aims to provide an easy way of writing, debugging, and submitting table programs to a Flink cluster without a single line of Java or Scala code. The SQL Client CLI allows for retrieving and visualizing real-time results from the running distributed application on the command line.
 
