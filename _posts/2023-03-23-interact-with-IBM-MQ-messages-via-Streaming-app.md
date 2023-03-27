@@ -19,7 +19,7 @@ The objective of this post is to showcase how to:
 ## Technology used:
 
 * IBM MQ
-* IBM Event Streaming
+* IBM Event Streams
 * Apache Flink
 * OpenShift Container Platform
 
@@ -34,19 +34,10 @@ Messages arrive to `APP.QUEUE` queue via `MVP.APP.SVRCONN` channel. A [streaming
 Example of `APP.QUEUE` messages:
 
 ```xml
-<mobile>
-    <transaction>
-        <send>
-            <account>checking</account>
-            <value>100</value>
-            <to>1001</to>
-            <action>payment</action>
-        </send>
-        <callback>
-            <status>pending</status>
-        </callback>
-    </transaction>
-</mobile>
+<transaction>102</transaction>
+<action>payment</action>
+<account>checking</account>
+<status>failed</status>
 ```
 
 Kafka Connect defines a [MQ Kafka Connector](https://community.ibm.com/community/user/ai-datascience/viewdocument/kafka-connectors-for-ibm-mq-a-mq?CommunityKey=b382f2ab-42f1-4932-aa8b-8786ca722d55) to source out messages from the streaming queue, `APP.EVENTS.QUEUE`, to a Kafka topic `TSOURCE`. Then, An [Apache Flink](https://flink.apache.org/what-is-flink/flink-architecture/) job listens to `TSOURCE` messages, and perform two actions:
@@ -59,19 +50,10 @@ Example of the Flink job output:
 
 ```json
 {
-  "mobile": {
-    "transaction": {
-      "callback": {
-        "status": "failed"
-      },
-      "send": {
-        "action": "payment",
-        "to": 1002,
-        "value": 100,
-        "account": "checking"
-      }
-    }
-  }
+  "transaction": 101,
+  "action": "payment",
+  "account": "checking",
+  "status": "failed"
 }
 ```
 
