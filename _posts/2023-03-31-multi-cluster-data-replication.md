@@ -10,17 +10,17 @@ author: ["RashidAljohani"]
 ![](/images/blogs/multi-cluster-data-replication/banner.png)
 
 
-You might end up using several Apache Kafka vendors to serve various projects in your organization, and now you plan to centralize a disaster recovery cluster.
+You might end up using several Apache Kafka vendors/clusters to serve various projects in your organization, and now you plan to centralize some topics in a Kafka Cluster; such as a disaster recovery use-cases.
 
 [MirrorMaker](https://strimzi.io/blog/2020/03/30/introducing-mirrormaker2/) is a multi-cluster data replication engine based on the Kafka Connect framework.
 
 ![](https://strimzi.io/assets/images/posts/2020-03-30-mirrormaker-renaming.png)
 
 
-In the following steps, you will learn how to replicate 2 distinct topics running in 2 different clusters in a centralized cluster. I will use two Apache Kafka vendors; [IBM Events Streams](https://www.ibm.com/cloud/event-streams) (clusters 1 & 3) and [Confluent Platform](https://developer.confluent.io/) (cluster 2). 
+In the following steps, you will learn how to replicate 2 distinct topics running in 2 different clusters to a centralized cluster. I will use two Apache Kafka vendors; [IBM Events Streams](https://www.ibm.com/cloud/event-streams) (clusters 1 & 3) and [Confluent Platform](https://developer.confluent.io/) (cluster 2). 
 
 
-* First, define [Geo-Replicator](https://ibm.github.io/event-streams/georeplication/about/) instance using `EventStreamsGeoReplicator` custom resource definition:
+* First, define [Geo-Replicator](https://ibm.github.io/event-streams/georeplication/about/) instance using `EventStreamsGeoReplicator` custom resource definition. This should match the desintation cluster (centralized cluster).
 
 ```yaml
 apiVersion: eventstreams.ibm.com/v1beta1
@@ -49,16 +49,16 @@ spec:
       bootstrapServers: '<bootstrapServers>:9092'
 ```
 
-* Then, define the mirroring configurations
+* Then, define the mirroring configurations for each Kafka source clusters
 
 ```yaml
 spec:
   mirrors:
-    - checkpointConnector:
+    - sourceCluster: kafka-dc-1
+      checkpointConnector:
         config:
           checkpoints.topic.replication.factor: 1
         tasksMax: 5
-      sourceCluster: kafka-dc-1
       sourceConnector:
         config:
           consumer.group.id: __eventstreams_georeplicator_kafka-dc-1_kafka-centralized
