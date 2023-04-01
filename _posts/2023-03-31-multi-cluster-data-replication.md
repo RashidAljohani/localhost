@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multi-cluster Data Replication
+title: Multi-clusters Data Replication
 categories: [streaming, kafka]
 excerpt: You might end up using several Apache Kafka vendors/clusters to serve various projects in your organization, and now you plan to centralize some ..
-image: /images/blogs/multi-cluster-data-replication/banner.png
+image: /images/blogs/multi-clusters-data-replication/banner.png
 author: ["RashidAljohani"]
 ---
 
-![](/images/blogs/multi-cluster-data-replication/banner.png)
+![](/images/blogs/multi-clusters-data-replication/banner.png)
 
 
 You might end up using several Apache Kafka vendors/clusters to serve various projects in your organization, and now you plan to centralize some topics in a Kafka Cluster; such as a disaster recovery use-cases.
@@ -73,7 +73,7 @@ spec:
 and that's about it! Here's a screenshot of the implementation:
 
 
-![](/images/blogs/multi-cluster-data-replication/example.png)
+![](/images/blogs/multi-clusters-data-replication/example.png)
 
 
 
