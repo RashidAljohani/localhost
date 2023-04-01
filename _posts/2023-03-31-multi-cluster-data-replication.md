@@ -2,7 +2,7 @@
 layout: post
 title: Multi-cluster Data Replication
 categories: [streaming, kafka]
-excerpt: You might end up using several Apache Kafka vendors to serve various projects in your organization, and now you plan to centralize a disaster recovery cluster. 
+excerpt: You might end up using several Apache Kafka vendors/clusters to serve various projects in your organization, and now you plan to centralize some ...
 image: /images/blogs/multi-cluster-data-replication/banner.png
 author: ["RashidAljohani"]
 ---
