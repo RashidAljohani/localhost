@@ -137,7 +137,7 @@ For more details refer to: [Installing Event Processing](https://ibm.github.io/e
 
 * The installation steps are similar to the regular OpenShift deployment procedure. Refer to the guide: [Installing Event Streams](https://ibm.github.io/event-automation/es/installing/installing/).
 
-* Create the welcome-page configration
+* Create the welcome-page configration, and update the value with the routes.
 
 ```yaml
 kind: ConfigMap
@@ -145,8 +145,8 @@ apiVersion: v1
 metadata:
     name: event-automation-welcome-urls
 data:
-    WELCOME_URL_EVENT_STREAMS: {{ welcome_url_eventstreams }}
-    WELCOME_URL_EVENT_PROCESSING: {{ welcome_url_eventprocessing }}
+    WELCOME_URL_EVENT_STREAMS: _welcome_url_eventstreams
+    WELCOME_URL_EVENT_PROCESSING: _welcome_url_eventprocessing
 ```
 
 * Update the `Event Processing` Custom Resource with the following block to mount the `ConfigMap`
