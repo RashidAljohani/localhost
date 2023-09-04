@@ -21,7 +21,7 @@ One of those measures is to protect internal information from getting exposed. T
 
 
 
-### The Throw Policy
+## The Throw Policy
 
 The policy throws an error usually as a result of a condition being reached. It takes three keys properties:
 
@@ -49,7 +49,7 @@ You can use the policy in any stage in the API flow, for example if the authenti
 
 Worth to mention, you can combine it with catch policy to organize the error handling logic in the API flow.
 
-### The Catch Policy
+## The Catch Policy
 
 The policy catchs errors that occur during an API call, and allows you to conctruct a error hanlding flow. It takes an array of objects of `errors` and `execute`.
 
