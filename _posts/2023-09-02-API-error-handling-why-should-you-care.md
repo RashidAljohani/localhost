@@ -42,7 +42,7 @@ You can use the policy in any stage in the API flow, for example if the authenti
                 - throw:
                     version: 2.1.0
                     title: throw
-                    name: auth-werner
+                    name: 500-err
                     error-status-code: '500'
                     message: The service is not available. Please try again later
 ```
