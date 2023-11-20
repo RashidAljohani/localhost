@@ -31,7 +31,7 @@ The deployment requires at least the following:
 * 16GB of RAM
 * 120GB Storage
 
-You can refer to the office guide for the deployment: [Installing OpenShift on a single node
+You can refer to the official guide for the deployment: [Installing OpenShift on a single node
 ](https://docs.openshift.com/container-platform/4.13/installing/installing_sno/install-sno-installing-sno.html)
 
 > In my case, I used AWS EC2 (m6i.2xlarge), EBS and EFS.
