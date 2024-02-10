@@ -18,7 +18,7 @@ More specifically, I will be using a tool called NiFi or Niagarafiles. It is an 
 
 #### Let's start by defining and scoping the problem statement:
 * **Requirement 1**: Your team generates a large `CSV` file. You are asked to extract each line, convert it to `JSON`, and then emit each line as an event to a Kafka environment.
-* **Requirements 2**: Your team aims to socialize the content using the [AsyncAPI specifications](https://www.asyncapi.com/) rather than a File-based approach; aka `CSV` files.
+* **Requirement 2**: Your team aims to socialize the content using the [AsyncAPI specifications](https://www.asyncapi.com/) rather than a File-based approach; aka `CSV` files.
 
 
 ### Technology stack
