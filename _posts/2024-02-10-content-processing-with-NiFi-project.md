@@ -50,6 +50,16 @@ You can use the following instructions to get started:
     - **Batch Size**: change to `1` so it will handle one file at a time.
     - **Keep Source File**: change to `true`, so we keep the original files.
 
+###### This is an example of the CSV content:
+```csv
+email,income,credit_score,assets_value,amount,interest,terms,living_status,_living_status_index,package,_package_index
+femjf@example.com,9100,490,27586,86813,3.31,3,Rent,1,Currency ETFs,6
+dttndsapcr@example.com,9460,493,65851,30303,7.47,3,Rent,1,Abitrage,2
+pnqhh@example.com,6300,702,49112,94802,5.87,9,Rent,1,Stock ETFs,7
+ozwdfnace@example.com,7640,879,45176,15303,6.02,10,Rent,1,Mutual Fund,5
+lhmmm@example.com,6485,789,77850,59253,4.6,5,Own,0,Fixed Rate Bonds,4
+```
+
 * Add another [SplitText](https://nifi.apache.org/documentation/nifi-2.0.0-M1/components/org.apache.nifi/nifi-standard-nar/2.0.0-M1/org.apache.nifi.processors.standard.SplitText/index.html) in the canvas. Then, connect the `GetFile` node with the `SplitText` node. The `SplitText` will extract each line from the `CSV`.
 * Update `SplitText` configuration with the following:
     - **Line Split Count**: to `1`.
