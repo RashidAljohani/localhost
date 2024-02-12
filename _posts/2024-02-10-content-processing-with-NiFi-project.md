@@ -50,8 +50,8 @@ You can use the following instructions to get started:
     - **Batch Size**: change to `1` so it will handle one file at a time.
     - **Keep Source File**: change to `true`, so we keep the original files.
 
-###### This is an example of the CSV content:
-```csv
+###### This is an example of the CSV content
+```
 email,income,credit_score,assets_value,amount,interest,terms,living_status,_living_status_index,package,_package_index
 femjf@example.com,9100,490,27586,86813,3.31,3,Rent,1,Currency ETFs,6
 dttndsapcr@example.com,9460,493,65851,30303,7.47,3,Rent,1,Abitrage,2
