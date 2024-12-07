@@ -8,7 +8,7 @@ author: ["RashidAljohani"]
 ---
 
 
-![](/rashidaljohani.github.io/images/blogs/Mastering-IBM-App-Connect-for-Effortless-AWS-Integration/banner.png)
+![](/images/blogs/Mastering-IBM-App-Connect-for-Effortless-AWS-Integration/banner.png)
 
 
 During a recent conversation, my client expressed interest in examining alternatives for integrating their existing systems with Amazon services like Simple Queue Service (SQS) and EventBridge. The primary goal was to discover a flexible solution capable of seamlessly connecting various applications and data sources, not limited to AWS services. 
@@ -53,7 +53,7 @@ IntegrationServer --name sqsintegration --work-dir sqsintegration --http-port-nu
 
 6. Define the operation and the API's specifications. In this example, I simply, created a `post` operation. The flow uses [Amazon SQS Request Node](https://www.ibm.com/docs/en/app-connect/13.0?topic=nodes-amazon-sqs-request-node) to put a message in the AWS SQS queue.
 
-![](/rashidaljohani.github.io/images/blogs/Mastering-IBM-App-Connect-for-Effortless-AWS-Integration/flow.png)
+![](/images/blogs/Mastering-IBM-App-Connect-for-Effortless-AWS-Integration/flow.png)
 
 The payload strcuture is:
 
@@ -82,6 +82,6 @@ curl --request POST \
 }'
 ```
 10. Here is the final result landed successfully to the Amazon SQS queue:
-![](/rashidaljohani.github.io/images/blogs/Mastering-IBM-App-Connect-for-Effortless-AWS-Integration/output.png)
+![](/images/blogs/Mastering-IBM-App-Connect-for-Effortless-AWS-Integration/output.png)
 
 
