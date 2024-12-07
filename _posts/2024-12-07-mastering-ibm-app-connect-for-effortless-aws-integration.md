@@ -28,7 +28,7 @@ mqsicreateworkdir sqsintegration
 * Configure an IBM App Connect Enterprise vault for storing encrypted credentials, which can be used to access secured resources.
 
 ```bash
-mqsivault --work-dir sqsintegration --create --vault-key "********"
+mqsivault --work-dir sqsintegration --create --vault-key "********" 
 ```
 
 *  Encrypt credentials and store them in an IBM App Connect Enterprise vault.
