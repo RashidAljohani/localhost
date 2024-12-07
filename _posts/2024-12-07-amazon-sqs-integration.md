@@ -19,19 +19,19 @@ Let me demonstrate this by guiding you through creating a simple integration flo
 
 ## Steps
 
-1. Ceate a work directory to be used by an IBM® App Connect Enterprise integration server.
+* Ceate a work directory to be used by an IBM® App Connect Enterprise integration server.
 
 ```bash
 mqsicreateworkdir sqsintegration
 ```
 
-2. Configure an IBM App Connect Enterprise vault for storing encrypted credentials, which can be used to access secured resources.
+* Configure an IBM App Connect Enterprise vault for storing encrypted credentials, which can be used to access secured resources.
 
 ```bash
 mqsivault --work-dir sqsintegration --create --vault-key passw0rd
 ```
 
-3. Encrypt credentials and store them in an IBM App Connect Enterprise vault.
+*  Encrypt credentials and store them in an IBM App Connect Enterprise vault.
 
 ```bash
 mqsicredentials --work-dir sqsintegration \
@@ -43,15 +43,15 @@ mqsicredentials --work-dir sqsintegration \
 --access-key-id "********"
 ```
 
-4. Start an IBM App Connect Enterprise integration server.
+*  Start an IBM App Connect Enterprise integration server.
 
 ```bash
 IntegrationServer --name sqsintegration --work-dir sqsintegration --http-port-number 7800 --admin-rest-api 7600 --vault-key ********
 ```
 
-5. Open the App Connect development toolkit, and start a quick [REST API](https://www.ibm.com/docs/en/app-connect/13.0?topic=apis-creating-rest-api) project. If you do not have it, you can download at: [Download IBM App Connect Enterprise Evaluation Edition and get started with a hands-on experience](https://www.ibm.com/docs/en/app-connect/13.0?topic=gsace-download-app-connect-enterprise-evaluation-edition-get-started).
+*  Open the App Connect development toolkit, and start a quick [REST API](https://www.ibm.com/docs/en/app-connect/13.0?topic=apis-creating-rest-api) project. If you do not have it, you can download at: [Download IBM App Connect Enterprise Evaluation Edition and get started with a hands-on experience](https://www.ibm.com/docs/en/app-connect/13.0?topic=gsace-download-app-connect-enterprise-evaluation-edition-get-started).
 
-6. Define the operation and the API's specifications. In this example, I simply, created a `post` operation. The flow uses [Amazon SQS Request Node](https://www.ibm.com/docs/en/app-connect/13.0?topic=nodes-amazon-sqs-request-node) to put a message in the AWS SQS queue.
+*  Define the operation and the API's specifications. In this example, I simply, created a `post` operation. The flow uses [Amazon SQS Request Node](https://www.ibm.com/docs/en/app-connect/13.0?topic=nodes-amazon-sqs-request-node) to put a message in the AWS SQS queue.
 
 ![](/images/blogs/Mastering-IBM-App-Connect-for-Effortless-AWS-Integration/flow.png)
 
@@ -61,14 +61,14 @@ The payload strcuture is:
 { "orderId": 123456789, "customerId": "123-45", "location": "EMEA"}
 ```
 
-7. Go to the [Amazon SQS Request Node settings](https://www.ibm.com/docs/en/app-connect/13.0?topic=nodes-amazon-sqs-request-node), and update the following properties:
+*  Go to the [Amazon SQS Request Node settings](https://www.ibm.com/docs/en/app-connect/13.0?topic=nodes-amazon-sqs-request-node), and update the following properties:
 
 - **Connection**: Create and assign the [Amazon SQS policy](https://www.ibm.com/docs/en/app-connect/13.0?topic=properties-amazon-sqs-policy), which contains the connection details that are used by an Amazon SQS Request node when connecting to an Amazon SQS application.
 - **Request**: The Map inputs table is used to define the input that is available for use when building the message to be sent to the Amazone SQS connector, and for defining the filter values for operations that require a filter. For example, I added a new input from `$InputRoot/JSON/Data` location.
 - **Basic**: Click on `Launch Connector Discovery` to select the action to be performed by the Amazon SQS Request node, such as, Put messages and Create Queues.
 
-8. Upload the Policy and REST API to the IntegrationServer.
-9. Test the integration service:
+*  Upload the Policy and REST API to the IntegrationServer.
+* Test the integration service:
 
 ```bash
 curl --request POST \
@@ -81,7 +81,7 @@ curl --request POST \
   "location": "KSA"
 }'
 ```
-10. Here is the final result landed successfully to the Amazon SQS queue:
+*  Here is the final result landed successfully to the Amazon SQS queue:
 ![](/images/blogs/Mastering-IBM-App-Connect-for-Effortless-AWS-Integration/output.png)
 
 
