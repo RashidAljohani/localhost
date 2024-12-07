@@ -63,9 +63,9 @@ The payload strcuture is:
 
 *  Go to the [Amazon SQS Request Node settings](https://www.ibm.com/docs/en/app-connect/13.0?topic=nodes-amazon-sqs-request-node), and update the following properties:
 
-- **Connection**: Create and assign the [Amazon SQS policy](https://www.ibm.com/docs/en/app-connect/13.0?topic=properties-amazon-sqs-policy), which contains the connection details that are used by an Amazon SQS Request node when connecting to an Amazon SQS application.
-- **Request**: The Map inputs table is used to define the input that is available for use when building the message to be sent to the Amazone SQS connector, and for defining the filter values for operations that require a filter. For example, I added a new input from `$InputRoot/JSON/Data` location.
-- **Basic**: Click on `Launch Connector Discovery` to select the action to be performed by the Amazon SQS Request node, such as, Put messages and Create Queues.
+  - **Connection**: Create and assign the [Amazon SQS policy](https://www.ibm.com/docs/en/app-connect/13.0?topic=properties-amazon-sqs-policy), which contains the connection details that are used by an Amazon SQS Request node when connecting to an Amazon SQS application.
+  - **Request**: The Map inputs table is used to define the input that is available for use when building the message to be sent to the Amazone SQS connector, and for defining the filter values for operations that require a filter. For example, I added a new input from `$InputRoot/JSON/Data` location.
+  - **Basic**: Click on `Launch Connector Discovery` to select the action to be performed by the Amazon SQS Request node, such as, Put messages and Create Queues.
 
 *  Upload the Policy and REST API to the IntegrationServer.
 * Test the integration service:
