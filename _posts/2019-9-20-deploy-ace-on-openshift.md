@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Deploy App Connect on OpenShift
-categories: [ACE,OpenShift]
+categories: [AppConnect,OpenShift]
 excerpt: It is fascinating how integration patterns are transforming toward more light and agile type of architecture. I see cloud-native development approach plays a vital role in this, where each integration service is becoming independent and elastic
 image: /images/blogs/deploy-ace-on-openshift/banner.png
 author: ["RashidAljohani"]

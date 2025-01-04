@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Explore Apache Flink SQL Client
-categories: [streaming, kafka, flink]
+categories: [Streaming, Kafka, Flink]
 excerpt: A quickstart app with Apache Flink SQL client
 image: /images/blogs/explore-apache-flink-sql-client/banner.png
 author: ["RashidAljohani"]

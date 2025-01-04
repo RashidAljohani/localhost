@@ -1,7 +1,7 @@
 ---
 layout: post
 title: API error handling, why should you care?
-categories: [apiconnect, security]
+categories: [APIConnect, security]
 excerpt: I had a discussion a few weeks ago with a client who wanted to mask error code and messages to avoid exposing internal information about backend services, such as the type of the error or service version.
 image: /images/blogs/API-error-handling-why-should-you-care/banner.png
 author: ["RashidAljohani"]

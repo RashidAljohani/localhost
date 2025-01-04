@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Federated API Gateway using API Connect
-categories: [api, automation]
+categories: [APIConnect, automation]
 excerpt: A customer asked me recently how to setup multiple API gateways work in different locations/configurations while still being controlled from a centralized API Management deployment.
 image: https://higherlogicdownload.s3.amazonaws.com/IMWUC/DevCenterMigration/6e449490ad5b48f3a07088b7b16b592d_5-multi-cloud-gateways.png
 author: ["RashidAljohani"]

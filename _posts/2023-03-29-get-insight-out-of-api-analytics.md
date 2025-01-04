@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Get Insight out of API Analytics in real-time
-categories: [streaming, kafka, flink]
+categories: [Streaming, Kafka, Flink]
 excerpt: Source out analytics events to a Kafka cluster to maximize business insight 
 image: /images/blogs/get-insight-out-of-api-analytics/banner.png
 author: ["RashidAljohani"]

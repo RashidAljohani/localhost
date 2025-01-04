@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Maintain DataPower Configurations on Clouds
-categories: [datapower,kubernetes]
+categories: [DataPower,kubernetes]
 excerpt: I was asked recently how to maintain DataPower, container-based, congigrations that are made via web-mgmt UI.
 image: /images/blogs/Maintain-DataPower-Configurations-on-Clouds/banner.png
 author: ["RashidAljohani"]

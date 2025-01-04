@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Camel Connectors Running in Kafka environments
-categories: [apache, kafka, eda]
+categories: [Apache, Kafka, EDA]
 excerpt: Apache Camel has just released a set of connectors which can be used to leverage the broad ecosystem of Camel in Kafka Connect
 image: /images/blogs/camel-connectors-running-in-kafka-environments/banner.png
 author: ["RashidAljohani"]

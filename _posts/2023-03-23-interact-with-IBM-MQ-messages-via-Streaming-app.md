@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interact with IBM MQ messages via Streaming app
-categories: [streaming, kafka, flink]
+categories: [Streaming, Kafka, Flink]
 excerpt: Learn how to source a queue of messages to a Kafka Cluster, and build a streaming application
 image: /images/blogs/interact-with-IBM-MQ-messages-via-Streaming-app/banner.png
 author: ["RashidAljohani"]

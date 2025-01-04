@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Extend Event Processing to the Edge Computing
-categories: [sno, streaming, kafka]
+categories: [SNO, Streaming, Kafka]
 excerpt: I've been lately exploring Red Hat Single Node Openshift. It is a deployment option announced by Red Hat in 2021, aiming to support applications that won't require extensive hardware footprints, for example, edge computing.
 image: /images/blogs/extend-event-processing-to-the-edge-computing/banner.png
 author: ["RashidAljohani"]

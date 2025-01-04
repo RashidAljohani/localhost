@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Integration Microservices CI/CD Pipeline
-categories: [ace,tekton]
+categories: [AppConnect,tekton]
 excerpt: Over a coffee, a friend of mine asked me .. why enterprises should consider integration modernization? Indeed, it is a big question, and you can write a book to answer that.
 image: /images/blogs/integration-nicroservices-cicd-pipeline/banner.png
 author: ["RashidAljohani"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Enrich ACE integration runtime with custom libraries
-categories: [ACE,open-source]
+categories: [AppConnect,open-source]
 excerpt: Customize App Connect runtime to suit your integration requirements
 image: /images/blogs/ACE-build-custom-intergration-runtime/banner.png
 author: ["RashidAljohani"]

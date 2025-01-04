@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Experiment - Business workflow on Single Node OpenShift
-categories: [sno, automation, workflow]
+categories: [SNO, automation, workflow]
 excerpt: In my previous blog, I discussed about Red Hat Single Node Openshift and how to extend executing applications in a distributed computing framework. I will explore IBM Business Workflow Services in a Single Node Openshift deployment in this blog. 
 image: /images/blogs/experiment-cp4a-sno/banner.png
 author: ["RashidAljohani"]
