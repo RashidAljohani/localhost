@@ -2,7 +2,7 @@
 layout: post
 title: Addressing Message Complexity in Event-Driven Applications
 categories: [AppConnect, EDA]
-excerpt: 
+excerpt: Enterprises offer a multitude of channels for users to interact with. The channels include traditional methods like ATMs and modern methods like digital wallets.
 image: /images/blogs/Addressing-Message-Complexity-in-Event-Driven-Applications/banner.png
 author: ["RashidAljohani"]
 ---
